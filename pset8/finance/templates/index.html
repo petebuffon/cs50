@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Finance
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+
+                <tr>
+                    {% for key, value in stock.items() %}
+                        <th scope="row">{{ value }}</th>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            <tr>
+                <th scope="row">CASH</th>
+                <th scope="row"></th>
+                <th scope="row"></th>
+                <th scope="row"></th>
+                <th scope="row">{{ cash }}</th>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <th scope="row"></th>
+                <th scope="row"></th>
+                <th scope="row"></th>
+                <th scope="row">{{ total }}</th>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
