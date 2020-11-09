@@ -37,5 +37,4 @@
 2. Finance - Website where users can "buy" and "sell" stocks.
 
 ## Final Project
-[Recipes](https://github.com/petebuffon/recipes) - Recipe storage website built with Python, Flask, SQLite, and Gunicorn.
-https://www.youtube.com/watch?v=ScspHtiSzzw
+[Recipes](https://github.com/petebuffon/recipes) - Recipe storage website built with Python, Flask, SQLite, and Gunicorn.  [Short video](https://www.youtube.com/watch?v=ScspHtiSzzw]).
